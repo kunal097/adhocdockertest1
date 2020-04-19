@@ -11,4 +11,14 @@ docker build -t alpine:kunal .
 ------------------------RUN--------------------------------
 docker run --name kunalc1q1 -v /home/adhoc/KunalSharma/q1/question1.txt:/code/question1.txt alpine:kunal
 
+-----------------date.py----------------------------
+import datetime
+
+date = datetime.datetime.now().strftime("%H:%M:%S")
+
+with open('question1.txt','a+') as f:
+	f.write(date)
+	f.write('\n')
+ ------------------------------END-----------------------------------
+
  
