@@ -1,0 +1,9 @@
+----------------------BUILD----------------------------------------
+docker build --tag adhoc:kunal https://github.com/redashu/summer2020dockertest.git
+------------------------------Tag------------------------------
+docker tag adhoc:kunal kunal097/adhoc:kunal                                                      
+----------------------login------------------
+docker login
+----------------------push---------------------
+docker push kunal097/adhoc:kunal > question2.txt
+------------------------END-----------------------
