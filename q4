@@ -1,0 +1,12 @@
+----------------------DOCKERFILE------------------------
+FROM centos
+RUN yum install httpd -y
+ADD https://github.com/redashu/beginner-html-site-styled.git /var/www/html/
+CMD httpd -DFOREGROUND
+EXPOSE 80
+----------------------BUILD---------------------
+dockebuild -t kunal:q4 .
+
+---------------------__RUN--------------------------
+docker run -itd --name kunalc4q4 -p 8401:80 kunal:q4
+-------------------END----------------------------
