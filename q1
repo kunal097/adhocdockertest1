@@ -1,0 +1,14 @@
+--------------------------Dockerfile------------------------
+FROM python:alpine3.7 
+MAINTAINER kunal, kunalsharma19997@gmail.com
+RUN mkdir -p /workdir
+COPY app /workdir
+RUN pip install -r workdir/requirements.txt
+EXPOSE 5000
+CMD python workdir/app.py
+------------------------Build------------------------------
+docker build -t alpine:kunal .
+------------------------RUN--------------------------------
+docker run --name kunalc1q1 -v /home/adhoc/KunalSharma/q1/question1.txt:/code/question1.txt alpine:kunal
+
+ 
