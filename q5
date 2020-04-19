@@ -1,0 +1,7 @@
+----------------Create Volume----------------
+docker volume create kunalq5
+
+------------------RUN----------------------
+docker run -it --name kunalc5q5 -v kunalq5:/adhocvol -v /etc/passwd:/user.txt alpine cat /user.txt | wc -l >> /adhovol/userscount.txt
+
+-------------------------------END------------------------------------------
